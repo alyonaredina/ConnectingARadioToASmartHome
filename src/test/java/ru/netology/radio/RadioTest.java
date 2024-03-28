@@ -9,7 +9,7 @@ public class RadioTest {
     public void shouldCurrentStation() {
         Radio rad = new Radio();
 
-        rad.currentStation = 5;
+        rad.setCurrentStation(5);
 
         int expected = 5;
         int actual = rad.getCurrentStation();
@@ -21,7 +21,7 @@ public class RadioTest {
     public void shouldCurrentVolume() {
         Radio rad = new Radio();
 
-        rad.currentVolume = 50;
+        rad.setCurrentVolume(50);
 
         int expected = 50;
         int actual = rad.getCurrentVolume();

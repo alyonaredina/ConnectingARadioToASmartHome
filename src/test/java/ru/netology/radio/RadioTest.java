@@ -250,5 +250,15 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
+    @Test
+    public void shouldQuantityStation() {
+        Radio rad = new Radio(20);
+
+        int expected = 20;
+        int actual = rad.getQuantityStation();
+
+        Assertions.assertEquals(20, rad.getQuantityStation());
+    }
+
 
 }

@@ -145,6 +145,19 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
+    @Test
+    public void setStationN15() {
+        Radio rad = new Radio(20);
+        rad.setCurrentStation(3);
+
+        rad.setCurrentStation(15);
+
+        int expected = 15;
+        int actual = rad.getCurrentStation();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
 
     @Test
     public void nextVolume() {
@@ -248,6 +261,16 @@ public class RadioTest {
         int actual = rad.getCurrentStation();
 
         Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldQuantityStation() {
+        Radio rad = new Radio(20);
+
+        int expected = 20;
+        int actual = rad.getQuantityStation();
+
+        Assertions.assertEquals(20, rad.getQuantityStation());
     }
 
 
